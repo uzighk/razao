@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+input, textarea, select { outline: none; }
+input::placeholder, textarea::placeholder { color: #94a3b8; }
+
+button { font-family: inherit; }
+
+.bg-finance {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(99, 102, 241, 0.07) 0%, transparent 60%),
+    #f8fafc;
+}
+
+.recharts-tooltip-wrapper { outline: none; }
+.recharts-tooltip-wrapper:focus { outline: none; }
